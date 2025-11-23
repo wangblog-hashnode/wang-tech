@@ -1,6 +1,6 @@
 ---
 title: "Aim for the Stars, land between the moons, or follow the meteor?"
-author: "Astro-naut Sid"
+author: "Wang Tech"
 description: "I had some challenges, but the community helped!"
 image:
   url: "../../assets/images/3.jpg"

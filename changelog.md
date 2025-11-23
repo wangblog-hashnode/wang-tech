@@ -1,4 +1,4 @@
-# Space Ahead ✨ Changelog
+# Wang Tech ✨ Changelog
 
 ## v0.11.4 (Latest) - Oct 29, 2025
 

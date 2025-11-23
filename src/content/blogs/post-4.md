@@ -1,6 +1,6 @@
 ---
 title: "May the Fourth be with you"
-author: "Astro-naut Sid"
+author: "Wang Tech"
 description: "This post will show up on its own!"
 image:
   url: "../../assets/images/4.jpg"

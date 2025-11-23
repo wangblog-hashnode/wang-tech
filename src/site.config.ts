@@ -69,11 +69,11 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     website: 'https://example.com',
-    title: 'Space Ahead',
+    title: 'Wang Tech',
     description: 'A minimal space-inspired personal blog template built with Astro.js and Tailwind CSS, by Siddhesh Thadeshwar',
     image: {
-        src: '/space-ahead-preview.jpeg',
-        alt: 'Space Ahead ✨ - A minimal space-inspired personal blog template, created by Siddhesh Thadeshwar.'
+        src: '/wang-tech-preview.jpeg',
+        alt: 'Wang Tech ✨ - A minimal space-inspired personal blog template, created by Siddhesh Thadeshwar.'
     },
     headerNavLinks: [
         {
@@ -106,20 +106,20 @@ const siteConfig: SiteConfig = {
             text: 'Contact',
             href: withBase('/contact')
         },
-        {
-            text: 'RSS Feed',
-            href: withBase('/rss.xml')
-        },
-                {
-            text: 'Sitemap',
-            href: withBase('/sitemap-index.xml')
-        }
+        // {
+        //     text: 'RSS Feed',
+        //     href: withBase('/rss.xml')
+        // },
+        // {
+        //     text: 'Sitemap',
+        //     href: withBase('/sitemap-index.xml')
+        // }
     ],
     socialLinks: [
-        {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
+        // {
+        //     text: 'Dribbble',
+        //     href: 'https://dribbble.com/'
+        // },
         {
             text: 'Instagram',
             href: 'https://instagram.com/'
@@ -131,8 +131,8 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         eyebrowText: 'Galaxy of Adventures',
-        title: 'Space Ahead ✨',
-        text: "Written by Astro-naut Sid, a space explorer at Beyond Earth.",
+        title: 'Wang Tech ✨',
+        text: "Written by Wang Tech, a space explorer at Beyond Earth.",
         image: {
             src: '/assets/images/pixeltrue-space-discovery.svg',
             alt: 'A person sitting at a desk in front of a computer'
@@ -150,33 +150,33 @@ const siteConfig: SiteConfig = {
     },
     about: {
         title: 'About',
-        text: 'Space Ahead is a blog about space exploration and travel. It is written by Astro-naut Sid, a space explorer at Beyond Earth. Sid is known for his love of adventure and his insatiable curiosity about the universe. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
+        text: 'Wang Tech is a blog about space exploration and travel. It is written by Wang Tech, a space explorer at Beyond Earth. Sid is known for his love of adventure and his insatiable curiosity about the universe. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
     },
     contactInfo: {
         title: 'Contact',
         text: "Hi! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:",
         email: {
             text: "Drop me an email and I’ll do my best to respond as soon as possible.",
-            href: "mailto:example@example.com",
-            email: "example@example.com"
+            href: "mailto:quangnguyendev18@gmail.com",
+            email: "quangnguyendev18@gmail.com"
         },
         socialProfiles: [
             {
                 text: "LinkedIn",
-                href: "https://www.linkedin.com/"
+                href: "https://www.linkedin.com/in/vquang"
             },
             {
-                text: "Peerlist",
-                href: "https://www.peerlist.io/"
+                text: "Youtube",
+                href: "https://www.youtube.com/@nobicoto3331"
             },
             {
                 text: "GitHub",
-                href: "https://github.com/"
+                href: "https://github.com/QNit18"
             }
         ]
     },
     subscribe: {
-        title: 'Subscribe to Space Ahead',
+        title: 'Subscribe to Wang Tech',
         text: 'One update per week. All the latest stories in your inbox.',
         formUrl: '#'
     },

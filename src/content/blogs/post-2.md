@@ -1,6 +1,6 @@
 ---
 title: "To the Moon and Back"
-author: "Astro-naut Sid"
+author: "Wang Tech"
 description: "After learning some Astro, I couldn't stop!"
 image:
   url: "../../assets/images/2.jpg"
