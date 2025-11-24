@@ -144,3 +144,209 @@ html.dark a:not(.button-link):hover {
     gap: 3rem;
   }
 }
+
+/* Enhanced Post Card Styles */
+.post-card {
+  @apply relative;
+}
+
+.post-card > div {
+  @apply relative overflow-hidden;
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.post-card:hover > div {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 10px 25px -5px rgba(0, 0, 0, 0.2),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+html.dark .post-card:hover > div {
+  box-shadow: 
+    0 10px 25px -5px rgba(0, 0, 0, 0.5),
+    0 8px 10px -6px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(255, 255, 133, 0.1),
+    0 0 0 1px rgba(255, 255, 133, 0.2);
+}
+
+html.light .post-card:hover > div {
+  box-shadow: 
+    0 10px 25px -5px rgba(144, 57, 58, 0.15),
+    0 8px 10px -6px rgba(144, 57, 58, 0.1),
+    0 0 20px rgba(144, 57, 58, 0.05),
+    0 0 0 1px rgba(144, 57, 58, 0.2);
+}
+
+/* Enhanced image styling */
+.post-card img {
+  @apply transition-transform duration-500 ease-out;
+  object-fit: cover;
+}
+
+.post-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Gradient overlay on hover for images */
+.post-card > div::before {
+  content: '';
+  @apply absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none z-10;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+}
+
+html.dark .post-card:hover > div::before {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 133, 0.05) 50%,
+    rgba(255, 255, 133, 0.1) 100%
+  );
+  opacity: 1;
+}
+
+html.light .post-card:hover > div::before {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(144, 57, 58, 0.05) 50%,
+    rgba(144, 57, 58, 0.1) 100%
+  );
+  opacity: 1;
+}
+
+/* Enhanced card background with subtle texture */
+.post-card > div {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+    rgba(255, 255, 255, 0.05);
+}
+
+html.dark .post-card > div {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 133, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 133, 0.02) 0%, transparent 50%),
+    rgba(0, 0, 0, 0.2);
+}
+
+html.light .post-card > div {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(144, 57, 58, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(144, 57, 58, 0.02) 0%, transparent 50%),
+    rgba(255, 255, 255, 0.05);
+}
+
+/* Enhanced "Recent Stories" heading */
+#posts h2 {
+  @apply relative inline-block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html.dark #posts h2 {
+  text-shadow: 0 2px 8px rgba(255, 255, 133, 0.2);
+}
+
+html.light #posts h2 {
+  text-shadow: 0 2px 4px rgba(144, 57, 58, 0.1);
+}
+
+/* Smooth entrance animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-card {
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.post-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.post-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.post-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.post-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Additional glow effect on hover */
+.post-card > div::after {
+  content: '';
+  @apply absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 pointer-events-none -z-10;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 133, 0.1) 0%,
+    transparent 70%
+  );
+}
+
+html.dark .post-card:hover > div::after {
+  opacity: 1;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 133, 0.15) 0%,
+    transparent 70%
+  );
+}
+
+html.light .post-card:hover > div::after {
+  opacity: 1;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(144, 57, 58, 0.1) 0%,
+    transparent 70%
+  );
+}
+
+/* Enhanced backdrop blur effect */
+.post-card > div {
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+}
+
+/* Improved text contrast and readability */
+.post-card h2 {
+  @apply font-semibold;
+  letter-spacing: -0.02em;
+}
+
+.post-card p {
+  @apply leading-relaxed;
+}
+
+/* Subtle scale animation on card container */
+#posts > div {
+  @apply transition-transform duration-300;
+}
+
+/* Enhanced spacing for better visual flow */
+#posts {
+  @apply space-y-6;
+}
+
+#posts > div:first-of-type {
+  @apply space-y-8;
+}

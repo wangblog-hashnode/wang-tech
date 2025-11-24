@@ -9,27 +9,30 @@ const { post } = Astro.props;
 const { title, pubDate, description, image } = post.data;
 ---
 
-<a class="font-bold" href={withBase("/blog/" + post.id)}>
-  <div class="flex flex-col sm:flex-row gap-2 sm:gap-4">
+<a 
+  class="post-card block font-bold transition-all duration-300" 
+  href={withBase("/blog/" + post.id)}
+>
+  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-2xl bg-white/5 dark:bg-black/20 backdrop-blur-md border border-gray-200/20 dark:border-gray-700/30 hover:border-space-red/60 dark:hover:border-space-yellow/60 transition-all">
     {
       image && image.url && (
-        <>
+        <div class="relative overflow-hidden rounded-xl flex-shrink-0">
           <Image
-            class=""
+            class="w-full h-full object-cover"
             src={image.url}
             alt={image.alt || ""}
             width={300}
             height={167}
           />
-        </>
+        </div>
       )
     }
-    <div class="flex flex-col max-w-fit">
-      <h2 class="mb-1">{title}</h2>
+    <div class="flex flex-col flex-1 min-w-0 relative z-20">
+      <h2 class="mb-2 text-xl sm:text-2xl leading-tight hover:text-space-red dark:hover:text-space-yellow transition-colors duration-300">{title}</h2>
       <FormattedDate date={new Date(pubDate)} />
       {
         description && (
-          <p class="font-light text-base text-balance">{description}</p>
+          <p class="font-light text-sm sm:text-base text-balance mt-2 line-clamp-2 opacity-90">{description}</p>
         )
       }
     </div>

@@ -130,9 +130,9 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        eyebrowText: 'Galaxy of Adventures',
+        eyebrowText: 'Technology of Adventures',
         title: 'Wang Tech ✨',
-        text: "Written by Wang Tech, a space explorer at Beyond Earth.",
+        text: "Written by Wang Tech, a software engineer come from Vietnam.",
         image: {
             src: '/assets/images/pixeltrue-space-discovery.svg',
             alt: 'A person sitting at a desk in front of a computer'
@@ -150,7 +150,7 @@ const siteConfig: SiteConfig = {
     },
     about: {
         title: 'About',
-        text: 'Wang Tech is a blog about space exploration and travel. It is written by Wang Tech, a space explorer at Beyond Earth. Sid is known for his love of adventure and his insatiable curiosity about the universe. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
+        text: 'Wang Tech is a blog about technology and programming. It is written by Wang Tech, a software engineer come from Vietnam. Wang Tech is known for his love of technology and his insatiable curiosity about the Tech-World. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
     },
     contactInfo: {
         title: 'Contact',
@@ -181,7 +181,7 @@ const siteConfig: SiteConfig = {
         formUrl: '#'
     },
     blog: {
-        description: "Read about my space adventures, explorations and the aliens I've met on my journeys."
+        description: "Read about my technology adventures, explorations and the aliens I've met on my journeys."
     },
     postsPerPage: 2,
     recentPostLimit: 3
