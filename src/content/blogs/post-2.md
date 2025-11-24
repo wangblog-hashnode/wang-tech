@@ -14,7 +14,6 @@ tags:
     "moon",
     "earth",
     "space exploration",
-    "space travel",
   ]
 ---
 

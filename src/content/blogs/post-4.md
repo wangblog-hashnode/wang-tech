@@ -13,7 +13,6 @@ tags:
     "moon",
     "dog",
     "space exploration",
-    "space travel",
     "movies",
     "popcorn",
     "star wars",

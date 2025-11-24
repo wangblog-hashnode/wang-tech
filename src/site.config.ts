@@ -183,8 +183,8 @@ const siteConfig: SiteConfig = {
     blog: {
         description: "Read about my technology adventures, explorations and the aliens I've met on my journeys."
     },
-    postsPerPage: 2,
-    recentPostLimit: 3
+    postsPerPage: 4,
+    recentPostLimit: 4
 };
 
 export default siteConfig;
