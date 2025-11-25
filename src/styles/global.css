@@ -244,6 +244,11 @@ html.light .post-card > div {
     radial-gradient(circle at 20% 50%, rgba(144, 57, 58, 0.03) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, rgba(144, 57, 58, 0.02) 0%, transparent 50%),
     rgba(255, 255, 255, 0.05);
+  border-width: 0.5px;
+}
+
+html.light .post-card:hover > div {
+  border-color: rgba(144, 57, 58, 0.3);
 }
 
 /* Enhanced "Recent Stories" heading */
