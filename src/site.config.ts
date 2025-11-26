@@ -132,7 +132,7 @@ const siteConfig: SiteConfig = {
     hero: {
         eyebrowText: 'Technology of Adventures',
         title: 'Wang Tech ✨',
-        text: "Written by Wang Tech, a software engineer come from Vietnam.",
+        text: "Written by Wang, a software engineer come from Vietnam.",
         image: {
             src: '/assets/images/pixeltrue-space-discovery.svg',
             alt: 'A person sitting at a desk in front of a computer'
@@ -150,7 +150,7 @@ const siteConfig: SiteConfig = {
     },
     about: {
         title: 'About',
-        text: 'Wang Tech is a blog about technology and programming. It is written by Wang Tech, a software engineer come from Vietnam. Wang Tech is known for his love of technology and his insatiable curiosity about the Tech-World. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
+        text: "Wang Tech is a blog about technology and programming. The blog is written by Wang, a software engineer from Vietnam. Wang Tech is famous for his endless love and curiosity for the world of technology. This is where I share things about life, technology or my personal product building journey."
     },
     contactInfo: {
         title: 'Contact',
