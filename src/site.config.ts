@@ -140,7 +140,7 @@ const siteConfig: SiteConfig = {
         actions: [
             {
                 text: 'Read Now',
-                href: withBase('/blog')
+                href: withBase('/blog/post-1')
             },
             {
                 text: 'Subscribe',

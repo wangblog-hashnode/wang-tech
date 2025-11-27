@@ -9,7 +9,7 @@
 /* 0. color variables & fonts */
 :root {
   --space-red: #90393a;
-  --space-yellow: #3bf5ff;
+  --space-blue: #3bf5ff;
   --space-sand: #e2d1c3;
   --space-stone: #434343;
 }
@@ -21,7 +21,7 @@
 @theme {
   --font-sans: "Kanit", "sans-serif";
   --color-space-red: var(--space-red);
-  --color-space-yellow: var(--space-yellow);
+  --color-space-yellow: var(--space-blue);
   --color-space-sand: var(--space-sand);
   --color-space-stone: var(--space-stone);
   --color-whitesmoke: whitesmoke;
@@ -121,6 +121,31 @@ html.dark a:not(.button-link):hover {
 
 .page-content {
   @apply my-12 w-full px-4 text-center;
+}
+
+/* Markdown emphasis */
+.page-content strong {
+  @apply font-semibold;
+}
+
+.page-content em {
+  font-style: italic;
+}
+
+html.light .page-content strong {
+  color: var(--space-red);
+}
+
+html.dark .page-content strong {
+  color: var(--space-blue);
+}
+
+html.light .page-content em {
+  color: var(--space-red);
+}
+
+html.dark .page-content em {
+  color: var(--space-blue);
 }
 
 @keyframes cursor-blink {
